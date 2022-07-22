@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="intlTelInput.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+      google.charts.load("current", { packages: ["corechart"] });
+    </script>
+    <title>2Dit</title>
+  </head>
+  <body>
+    <div class="container-task5">
+      <div class="container-task5--textToggle">
+        <span class="container-task5--text">Предыдущий период </span>
+        <div class="toggle--container">
+          <input type="checkbox" class="toggle-button" />
+        </div>
+        <span class="container-task5--text__grey container-task5--text"
+          >План
+        </span>
+      </div>
+      <h3 class="mainLabel">Продажи</h3>
+      <div class="container--countPizza">
+        <div class="leftBlock">
+          <div class="container--countPizza--text">
+            <span class="countPizza--text countText"
+              >Количество проданных пицц
+            </span>
+            <div class="countPizza--line">
+              <hr />
+            </div>
+          </div>
+          <div class="container--countPizza--charts">
+            <div class="chartCountry chart">
+              <h3 class="chartCountry--label">Страны</h3>
+
+              <div id="countryCount" class="donutchart"></div>
+              <div class="container--chartText">
+                <span class="chartSubText">335</span>
+                <span class="chartSupText">шт.</span>
+              </div>
+            </div>
+            <div class="chartCity chart">
+              <h3 class="chartCountry--label">Города</h3>
+              <div id="cityryCount"></div>
+              <div class="container--chartText">
+                <span class="chartSubText">1065</span>
+                <span class="chartSupText">шт.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rightBlock">
+          <div class="container--countPizza--text">
+            <span class="countPizza--text">Выручка</span>
+            <div class="countPizza--line">
+              <hr />
+            </div>
+          </div>
+          <div class="container--countPizza--charts">
+            <div class="chart">
+              <h3 class="chartCountry--label">Страны</h3>
+              <div id="countryPay"></div>
+              <div class="container--chartText">
+                <span class="chartSubText">130 $</span>
+                <span class="chartSupText">млн.</span>
+              </div>
+            </div>
+            <div class="chart">
+              <h3 class="chartCountry--label">Города</h3>
+              <div id="cityPay"></div>
+              <div class="container--chartText">
+                <span class="chartSubText">130 $</span>
+                <span class="chartSupText">млн.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  
+    <div class="container-task4">
+      <form method="POST" id="submitFormTask4" class="container-task4--form">
+        <h2 class="task4--label">Оставите заявку</h2>
+        <h5 class="task4--text">И наш специалист свяжется с вами</h5>
+        <div class="inputConteiner">
+          <input
+            type="text"
+            name="Имя"
+            placeholder="Ваше имя"
+            class="inputStyle"
+          />
+          <input
+            type="tel"
+            id="phone"
+            name="Телефон"
+            class="inputStyle phone"
+          />
+          <input
+            type="email"
+            name="Эл. почта"
+            placeholder="Эл. почта"
+            class="inputStyle"
+          />
+        </div>
+        <div class="button-container">
+          <p class="button-container--text">
+            Нажимая кнопку, я принимаю
+            <a class="button-container--link" href="#"
+              >пользовательское соглашение</a
+            >, соглашаюсь с политикой конфиденциальности, условиями пользования
+            сайтом, передачей и обработкой моих персональных данных
+          </p>
+          <button class="task4--button">Оформить заявку</button>
+        </div>
+      </form>
+    </div>
+
+
+    <div class="task3">
+      <div class="container-task3">
+        <div class="task3--text--container">
+          <h6 class="task3--number--post">01.</h6>
+
+          <span class="task3--title">С расчетного счета компании</span>
+          <div class="task3--text">
+            Diam aliquam quis blandit sollicitudin sit ut venenatis dictum fusce
+            gravida, porta commodo natoque tristique magna massa laoreet luctus.
+            Ligula per justo condimentum et ut dignissim ipsum, consequat
+            tristique sollicitudin convallis bibendum risus lorem nostra,
+            cubilia purus odio tincidunt amet euismod. Luctus nascetur urna
+            adipiscing nisl libero bibendum maecenas accumsan mi, ligula
+            consectetur congue nam magnis posuere purus. Himenaeos habitasse
+            nunc sociosqu erat aliquam class justo porta dictumst, pulvinar id
+            dignissim facilisi dolor tincidunt in non tellus, nam posuere
+            laoreet turpis diam ut placerat lacus. Facilisi nec sagittis
+            interdum blandit urna turpis sociosqu risus, viverra class odio
+            aliquet cras morbi nunc egestas convallis, habitasse mollis mi
+            maximus donec congue commodo. Rutrum turpis diam ut placerat lacus.
+            Facilisi nec sagittis interdum blandit urna turpis sociosqu risus,
+            viverra class odio aliquet cras morbi nunc egestas convallis,
+            habitasse mollis mi maximus donec congue commodo. Rutrum
+          </div>
+        </div>
+      </div>
+      <div class="container-task3">
+        <div class="task3--text--container">
+          <h6 class="task3--number--post">02.</h6>
+
+          <span class="task3--title"
+            >С карты через онлайн банк физлица или в отделении банка</span
+          >
+          <div class="task3--text">
+            Diam aliquam quis blandit sollicitudin sit ut venenatis dictum fusce
+            gravida, porta commodo natoque tristique magna massa laoreet luctus.
+            Ligula per justo condimentum et ut dignissim ipsum, consequat
+            tristique sollicitudin convallis bibendum risus lorem nostra,
+            cubilia purus odio tincidunt amet euismod. Luctus nascetur urna
+            adipiscing nisl libero bibendum maecenas accumsan mi, ligula
+            consectetur congue nam magnis posuere purus. Himenaeos habitasse
+            nunc sociosqu erat aliquam class justo porta dictumst, pulvinar id
+            dignissim facilisi dolor tincidunt in non tellus, nam posuere
+            laoreet turpis diam ut placerat lacus.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="task2">
+      <div class="container--task2">
+        <div class="task2--post">
+            <button class="task2--button--stock starIcon"  >
+                <img  class="starImg" src="img/star.svg" alt="#">
+                <span class="task2--button--text" >Хит продаж</span>
+            </button>
+            <button class="task2--button--isPresent check"  >
+                <img  class="starImg" src="img/icon.png" alt="#">
+                <span class="isPresent--text" >В наличии</span>
+            </button>
+          <img class="task2--img" src="img/chair.png" alt="#" />
+          <div class="task2--text--container">
+            <span class="task2-label">Кресла театральные</span>
+            <h4 class="task2--name">Театральное кресло Прайм</h4>
+            <span class="task2-label artikl"
+              >Артикул: <a class="task2--phone" href="789-2341">789-2341</a>
+            </span>
+            <span class="task2-label task2-sell">от:<b> 6 762</b> Р</span>
+          </div>
+        </div>
+        <div class="task2--post">
+            <button class="task2--button--stock discount"  >
+                <img  class="starImg" src="img/discount.svg" alt="#">
+                <span class="task2--button--text" >Акция</span>
+            </button>
+
+            <img class="task2--img" src="img/Rectangle 6.png" alt="#" />
+            
+            <button class="task2--button--isPresent check"  >
+                <img  class="starImg" src="img/icon.png" alt="#">
+                <span class="isPresent--text" >В наличии</span>
+            </button>
+            <div class="task2--text--container">
+              <span class="task2-label">Кресла театральные</span>
+              <h4 class="task2--name">Театральное кресло Прайм</h4>
+              <span class="task2-label artikl"
+                >Артикул: <a class="task2--phone" href="789-2341">789-2341</a>
+              </span>
+              <span class="task2-label task2-sell">от:<b> 6 762</b> Р</span>
+            </div>
+          </div>
+          <div class="task2--post">
+            <button class="task2--button--stock rocket"  >
+                <img  class="starImg" src="img/rocket.png" alt="#">
+                <span class="task2--button--text" >Хит продаж</span>
+            </button>
+            <button class="task2--button--isPresent check"  >
+                <img  class="starImg" src="img/icon.png" alt="#">
+                <span class="isPresent--text" >В наличии</span>
+            </button>
+            <img class="task2--img" src="img/chair.png" alt="#" />
+            <div class="task2--text--container">
+              <span class="task2-label">Кресла театральные</span>
+              <h4 class="task2--name">Театральное кресло Прайм</h4>
+              <span class="task2-label artikl"
+                >Артикул: <a class="task2--phone" href="789-2341">789-2341</a>
+              </span>
+              <span class="task2-label task2-sell">от:<b> 6 762</b> Р</span>
+            </div>
+          </div>
+          <div class="task2--post">
+            <img class="task2--img" src="img/chair.png" alt="#" />
+            <div class="task2--text--container">
+              <span class="task2-label">Кресла театральные</span>
+              <h4 class="task2--name">Театральное кресло Прайм</h4>
+              <span class="task2-label artikl"
+                >Артикул: <a class="task2--phone" href="789-2341">789-2341</a>
+              </span>
+              <span class="task2-label task2-sell">от:<b> 6 762</b> Р</span>
+            </div>
+          </div>
+          <div class="task2--post">
+            <img class="task2--img" src="img/chair.png" alt="#" />
+            <div class="task2--text--container">
+              <span class="task2-label">Кресла театральные</span>
+              <h4 class="task2--name">Театральное кресло Прайм</h4>
+              <span class="task2-label artikl"
+                >Артикул: <a class="task2--phone" href="789-2341">789-2341</a>
+              </span>
+              <span class="task2-label task2-sell">от:<b> 6 762</b> Р</span>
+            </div>
+          </div>
+          <div class="task2--post">
+            <img class="task2--img" src="img/chair.png" alt="#" />
+            <div class="task2--text--container">
+              <span class="task2-label">Кресла театральные</span>
+              <h4 class="task2--name">Театральное кресло Прайм</h4>
+              <span class="task2-label artikl"
+                >Артикул: <a class="task2--phone" href="789-2341">789-2341</a>
+              </span>
+              <span class="task2-label task2-sell">от:<b> 6 762</b> Р</span>
+            </div>
+          </div>
+          <div class="task2--post">
+            <img class="task2--img" src="img/chair.png" alt="#" />
+            <div class="task2--text--container">
+              <span class="task2-label">Кресла театральные</span>
+              <h4 class="task2--name">Театральное кресло Прайм</h4>
+              <span class="task2-label artikl"
+                >Артикул: <a class="task2--phone" href="789-2341">789-2341</a>
+              </span>
+              <span class="task2-label task2-sell">от:<b> 6 762</b> Р</span>
+            </div>
+          </div>
+          <div class="task2--post">
+            <img class="task2--img" src="img/chair.png" alt="#" />
+            <div class="task2--text--container">
+              <span class="task2-label">Кресла театральные</span>
+              <h4 class="task2--name">Театральное кресло Прайм</h4>
+              <span class="task2-label artikl"
+                >Артикул: <a class="task2--phone" href="789-2341">789-2341</a>
+              </span>
+              <span class="task2-label task2-sell">от:<b> 6 762</b> Р</span>
+            </div>
+          </div>
+          <div class="task2--post">
+            <img class="task2--img" src="img/chair.png" alt="#" />
+            <div class="task2--text--container">
+              <span class="task2-label">Кресла театральные</span>
+              <h4 class="task2--name">Театральное кресло Прайм</h4>
+              <span class="task2-label artikl"
+                >Артикул: <a class="task2--phone" href="789-2341">789-2341</a>
+              </span>
+              <span class="task2-label task2-sell">от:<b> 6 762</b> Р</span>
+            </div>
+          </div>
+          <div class="task2--post">
+            <img class="task2--img" src="img/chair.png" alt="#" />
+            <div class="task2--text--container">
+              <span class="task2-label">Кресла театральные</span>
+              <h4 class="task2--name">Театральное кресло Прайм</h4>
+              <span class="task2-label artikl"
+                >Артикул: <a class="task2--phone" href="789-2341">789-2341</a>
+              </span>
+              <span class="task2-label task2-sell">от:<b> 6 762</b> Р</span>
+            </div>
+          </div>
+      </div>
+      
+       
+    </div> 
+ </div>
+    
+    <div class="task1">
+        <div class="task1--container">
+            <div class="task1--text">
+                <h2>На что рассчитывать привзыскании неустойки по ДДУ?</h2>
+                <p class="task1--text-paragraph">
+                    Когда застройщик нарушает сроки сдачи по ДДУ, вы как дольщик имеете право требовать неустойку за просрочку, а также компенсацию убытков, вызванных этой просрочкой.</p>
+                    <br>
+                    <p class="task1--text-paragraph">Само собой, застройщику невыгодно добровольно выплачивать вам компенсацию. Когда дело доходит до суда, суд урезает сумму неустойки на основании ст. 333 ГК РФ. Это урезание практически неизбежно.</p>
+                    <br>
+                    <p class="task1--text-paragraph">Основная наша задача состоит в том, чтобы взыскать неустойку по ДДУ в максимальном размере, т.е. избежать сильного ее урезания. Вот что вы можете требовать от застройщика.</p>
+            </div>
+            <div class="task1--accordeon">
+                <div id="accordion">
+                    <h3 class="task-1--accordion--label">Выплата неустойки по ДДУ <img  class="accordion--img" src="img/Down.png" alt="#"></h3>
+                    <div class="tabs__text" id="tabs-1" style="height: 0px;">
+                        <p>
+                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis id, hic recusandae eligendi tenetur distinctio!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi error modi accusantium nisi deserunt perferendis totam obcaecati laudantium incidunt! Harum autem nobis repellat, distinctio explicabo adipisci ipsum omnis repellendus minus!
+                        </p>
+                    </div>
+                    
+                    <div id="accordion">
+                        <h3 class="task-1--accordion--label">Компенсация морального вреда <img  class="accordion--img" src="img/Down.png" alt="#"></h3>
+                        <div class="tabs__text" id="tabs-1" style="height: 0px;">
+                            <p>
+                               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis id, hic recusandae eligendi tenetur distinctio!
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi error modi accusantium nisi deserunt perferendis totam obcaecati laudantium incidunt! Harum autem nobis repellat, distinctio explicabo adipisci ipsum omnis repellendus minus!
+                            </p>
+                        </div>
+
+                        <div id="accordion">
+                            <h3 class="task-1--accordion--label">Штраф в размере 50% <img  class="accordion--img" src="img/Down.png" alt="#"></h3>
+                            <div class="tabs__text" id="tabs-1" style="height: 0px;">
+                                <p>
+                                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis id, hic recusandae eligendi tenetur distinctio!
+                                </p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi error modi accusantium nisi deserunt perferendis totam obcaecati laudantium incidunt! Harum autem nobis repellat, distinctio explicabo adipisci ipsum omnis repellendus minus!
+                                </p>
+                            </div>
+
+                            <div id="accordion">
+                                <h3 class="task-1--accordion--label">Компенсация расходов по аренде жилья <img  class="accordion--img" src="img/Down.png" alt="#"></h3>
+                                <div class="tabs__text" id="tabs-1" style="height: 0px;">
+                                    <p>
+                                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis id, hic recusandae eligendi tenetur distinctio!
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi error modi accusantium nisi deserunt perferendis totam obcaecati laudantium incidunt! Harum autem nobis repellat, distinctio explicabo adipisci ipsum omnis repellendus minus!
+                                    </p>
+                                </div>
+
+                                <div id="accordion">
+                                    <h3 class="task-1--accordion--label">Компенсация убытков по ипотеке <img  class="accordion--img" src="img/Down.png" alt="#"></h3>
+                                    <div class="tabs__text" id="tabs-1" style="height: 0px;">
+                                        <p>
+                                           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis id, hic recusandae eligendi tenetur distinctio!
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi error modi accusantium nisi deserunt perferendis totam obcaecati laudantium incidunt! Harum autem nobis repellat, distinctio explicabo adipisci ipsum omnis repellendus minus!
+                                        </p>
+                                    </div>
+
+                                    <div id="accordion">
+                                        <h3 class="task-1--accordion--label">Возмещение иных расходов<img  class="accordion--img" src="img/Down.png" alt="#"></h3>
+                                        <div class="tabs__text" id="tabs-1" style="height: 0px;">
+                                            <p>
+                                               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis id, hic recusandae eligendi tenetur distinctio!
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi error modi accusantium nisi deserunt perferendis totam obcaecati laudantium incidunt! Harum autem nobis repellat, distinctio explicabo adipisci ipsum omnis repellendus minus!
+                                            </p>
+                                        </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    </div>
+    
+   
+    <script src="intlTelInput.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
